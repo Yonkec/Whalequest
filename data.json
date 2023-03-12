@@ -1,0 +1,105 @@
+{
+    "rooms": [
+      {
+          "name": "Dark Room",
+          "description": "A pitch black room with no visible light sources.",
+          "exits": {
+              "north": 1
+          },
+          "items": []
+      },
+      {
+          "name": "North Room",
+          "description": "A cold, barren room with ice-cold walls.",
+          "exits": {
+              "north": 2,
+              "east": 3
+          },
+          "items": [
+              {
+                  "name": "Ice Pick",
+                  "description": "A sharp tool used for breaking up ice."
+              },
+              {
+                  "name": "Winter Coat",
+                  "description": "A warm coat designed for cold weather."
+              }
+          ]
+      },
+      {
+          "name": "West Room",
+          "description": "A damp, musty room with cobwebs in the corners.",
+          "exits": {
+              "south": 1,
+              "west": 4
+          },
+          "items": [
+              {
+                  "name": "Spider Web",
+                  "description": "A sticky spider web hanging in the corner."
+              },
+              {
+                  "name": "Rusty Key",
+                  "description": "An old, rusty key that looks like it's been unused for years."
+              }
+          ]
+      },
+      {
+          "name": "Storage Room",
+          "description": "A cluttered room filled with boxes and old furniture.",
+          "exits": {
+              "west": 2,
+              "south": 5
+          },
+          "items": [
+              {
+                  "name": "Dusty Box",
+                  "description": "An old, dusty box filled with cobwebs."
+              },
+              {
+                  "name": "Antique Chair",
+                  "description": "A beautiful, antique chair with intricate designs."
+              }
+          ]
+      },
+      {
+          "name": "Cellar",
+          "description": "A dark, creepy cellar with a musty smell.",
+          "exits": {
+              "east": 3
+          },
+          "items": [
+              {
+                  "name": "Broken Bottle",
+                  "description": "A broken glass bottle lying on the floor."
+              },
+              {
+                  "name": "Cobweb-covered Lantern",
+                  "description": "A rusty old lantern covered in cobwebs."
+              }
+          ]
+      },
+      {
+          "name": "Basement",
+          "description": "A dimly lit basement with a strange smell.",
+          "exits": {
+              "north": 4
+          },
+          "items": [
+              {
+                  "name": "Moldy Bread",
+                  "description": "A stale, moldy piece of bread lying on the ground."
+              },
+              {
+                  "name": "Creaky Old Desk",
+                  "description": "An old, creaky desk covered in dust."
+              }
+          ]
+      }
+  ],
+    "player": {
+      "name": "Player",
+      "current_room": 0,
+      "inventory": []
+    }
+  }  
