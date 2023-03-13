@@ -5,7 +5,7 @@ rooms, player = loadGameData("data.json")
 
 def main(screen):
     screen.keypad(True)
-
+    curses.echo()
     maxY, maxX = screen.getmaxyx()
     curses.init_pair(1, curses.COLOR_RED, curses.COLOR_BLACK)
     curses.init_pair(2, curses.COLOR_GREEN, curses.COLOR_BLACK)
@@ -26,7 +26,7 @@ def main(screen):
         
         window2 = curses.newwin(round(maxY * .8), round(maxX * .4) , 0, round(maxX * .6))
         window2.box()
-        w2y, w2x = window2.getmaxyx()
+        w2y, _ = window2.getmaxyx()
         w2sy = (w2y // 2) - 1
         window2.addstr(w2sy, 5, f"=======Inventory=======", curses.A_BLINK | curses.color_pair(1))
         window2.addstr(w2sy + 2, 5, ", ".join(item.name for item in player.inventory), curses.A_BLINK | curses.color_pair(3))
@@ -61,7 +61,8 @@ def main(screen):
             player.dropItem(item)
 
 
-curses.wrapper(main)
+if __name__ == "__main__":
+    curses.wrapper(main)
 
 
 
